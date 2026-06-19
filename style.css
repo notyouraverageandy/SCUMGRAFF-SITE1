@@ -165,3 +165,45 @@ footer {
     color: #444444;
     font-size: 0.7rem;
 }
+/* Pyramid Grid Layout */
+.pyramid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 15px;
+    margin: 25px auto;
+    max-width: 100%;
+}
+
+/* Position Front View at Top Center across 2 columns */
+.top-center {
+    grid-column: 1 / span 2; 
+    margin: 0 auto;
+    width: 70%; /* Makes the top image slightly larger/focused */
+}
+
+.bottom-left, .bottom-right {
+    grid-row: 2;
+}
+
+/* Individual Item Styling */
+.gallery-item {
+    background: #111;
+    border: 2px solid #39FF14;
+    padding: 10px;
+    box-shadow: 4px 4px 0px #FF007F;
+}
+
+.hat-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #00FFFF;
+    object-fit: cover; /* Ensures images fill their boxes cleanly */
+}
+
+.caption {
+    font-size: 0.7rem;
+    color: #FFFF00;
+    margin-top: 8px;
+    font-family: "Courier New", monospace;
+}
