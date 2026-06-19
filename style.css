@@ -1,0 +1,167 @@
+/* Core Styling & Screen Reset */
+body {
+    background-color: #000000;
+    color: #39FF14; /* Cyber Neon Green */
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Make everything fit mobile perfectly */
+main {
+    padding: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* 90s Marquee Ticker */
+.retro-ticker {
+    background: #FF007F; /* Neon Pink */
+    color: #000000;
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 6px 0;
+    border-bottom: 2px solid #00FFFF;
+}
+
+/* Branded Title Design */
+.wordart-title {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 2.5rem;
+    color: #00FFFF; /* Bright Cyan */
+    text-shadow: 4px 4px 0px #FF007F;
+    margin: 25px 0 5px 0;
+    letter-spacing: 4px;
+}
+
+.sub-glitch {
+    color: #FFFF00; /* Caution Yellow */
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Main Container Window */
+.studio-vault {
+    border: 3px solid #39FF14;
+    background-color: #0A0A0A;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 6px 6px 0px #00FFFF;
+}
+
+/* Blinking Animation */
+.construction-badge {
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 0.95rem;
+    animation: retro-blink 1.2s infinite steps(2, start);
+    margin-bottom: 15px;
+}
+
+@keyframes retro-blink {
+    to { visibility: hidden; }
+}
+
+/* ASCII Art Box */
+.hat-wireframe pre {
+    color: #00FFFF;
+    font-size: 0.8rem;
+    line-height: 1.1;
+    display: inline-block;
+    text-align: left;
+    margin: 15px 0 5px 0;
+}
+
+.hat-wireframe .caption {
+    font-size: 0.75rem;
+    color: #FFFF00;
+}
+
+/* The Sign Up Block */
+.hacker-form-box {
+    border: 2px dashed #FF007F;
+    padding: 15px;
+    margin-top: 25px;
+    background: #000;
+}
+
+.hacker-form-box h3 {
+    color: #00FFFF;
+    margin-top: 0;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* Button Layout Wrapper - This completely separates the buttons vertically */
+.portal-buttons {
+    display: block; 
+    margin-top: 20px;
+    padding: 5px;
+}
+
+/* Core Link Button Styles */
+.portal-link {
+    display: block; /* Forces them to stack on separate lines */
+    width: 90%;
+    max-width: 280px;
+    margin: 20px auto; /* Creates a large 20px physical gap between them */
+    padding: 12px 10px;
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* Big Cartel Button Colors */
+.bc-btn {
+    background: #FFFF00; /* Yellow */
+    color: #000000;
+    box-shadow: 4px 4px 0px #FF007F;
+}
+
+/* Etsy Button Colors */
+.etsy-btn {
+    background: #FF5722; /* Etsy Orange */
+    color: #FFFFFF;
+    box-shadow: 4px 4px 0px #00FFFF;
+}
+
+/* Click Animation For Both */
+.portal-link:active {
+    box-shadow: none;
+    transform: translate(4px, 4px);
+}
+
+/* Bottom Metrics Area */
+footer {
+    margin: 40px 0 20px 0;
+    padding: 10px;
+}
+
+.hits-counter {
+    background: #111111;
+    border: 2px solid #FFFFFF;
+    display: inline-block;
+    padding: 6px 12px;
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    box-shadow: inset 0 0 5px #000;
+}
+
+.webmaster {
+    color: #888888;
+    font-size: 0.75rem;
+    margin-top: 15px;
+}
+
+.copyright {
+    color: #444444;
+    font-size: 0.7rem;
+}
